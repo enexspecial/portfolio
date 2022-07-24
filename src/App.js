@@ -10,12 +10,11 @@ import Resume from "./containers/resume";
 import Contact from "./containers/contact";
 import Skills from "./containers/skills";
 // import components
-
 import NavBar from "./components/navBar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
 
       {/* particles js */}
 

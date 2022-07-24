@@ -1,5 +1,5 @@
 
-export const navMenus = [
+export const NavMenus = [
     {
         label:"HOME",
         to:"/"
