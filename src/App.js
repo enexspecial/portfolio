@@ -14,7 +14,7 @@ import NavBar from "./components/navBar";
 
 function App() {
   return (
-    <div className="">
+    <div className="App">
 
       {/* particles js */}
 

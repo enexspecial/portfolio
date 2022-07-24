@@ -1,11 +1,15 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaBars } from "react-icons/fa";
+import { HiX } from "react-icons/hi";
 import { NavMenus } from "./config";
 
 const NavBar = () => {
 
-    const [click, setClick] = useState();
+    const [click, setClick] = useState(false);
+
+    const handleClick=()=>setClick(!click);
+    
 
   return (
     <div>
@@ -24,8 +28,10 @@ const NavBar = () => {
                 ))
             }
           </ul>
-          <div className="nav-icon">
-             
+          <div className="nav-icon" onClick={handleClick}>
+                {
+                    click ? <HiX size={30}/> : <FaBars size={30}/>
+                }
           </div>
         </div>
       </nav>
