@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+
+:root{
+
+  --selected-theme-background-color:var(--purple-theme-background-color);
+  --selected-theme-main-color:var(--purple-theme-main-color);
+  --selected-theme-sub-text-color:var( --purple-theme-sub-text-color);
+  --selected-theme-nav-background-color:var(--purple-theme-nav-backgroud-color);
+
+  /* primary color */
+
+  --purple-theme-background-color : #1d1d1d;
+  --purple-theme-main-color:#E6E6FA;
+  --purple-theme-sub-text-color:#ffffff;
+  --purple-theme-nav-backgroud-color:#181818;
+
+  --font-base:"Roboto Slab", serif;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* reset css rule */
+
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+html{
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body{
+  background:var(--selected-theme-background-color);
+  height:100%;
+}
+
+#root{
+  height: 100%;
 }
